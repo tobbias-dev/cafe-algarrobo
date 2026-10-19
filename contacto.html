@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Escribile a Café Algarrobo: consultas, eventos y presupuestos.">
+  <title>Café Algarrobo | Contacto</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- menú (es el mismo en las 3 páginas) -->
+  <header>
+    <nav aria-label="Navegación principal">
+      <a href="index.html">
+        <img src="img/logo.svg" alt="Logo de Café Algarrobo" width="46" height="46">
+        Café Algarrobo
+      </a>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nuestro-cafe.html">Nuestro café</a></li>
+        <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- título de la página -->
+    <section>
+      <div>
+        <span>Contacto</span>
+        <h1>Hablemos de café</h1>
+        <p>
+          ¿Tenés una consulta, querés reservar una mesa o pedir un presupuesto para un evento?
+          Completá el formulario y te respondemos a la brevedad.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <div>
+
+          <!-- formulario -->
+          <div>
+            <h2>Envianos un mensaje</h2>
+            <!-- por ahora no envía nada, es solo el diseño (lo pide así la consigna) -->
+            <form action="#" method="post">
+              <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido" required>
+              </div>
+              <div>
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+              </div>
+              <div>
+                <label for="motivo">Motivo de la consulta</label>
+                <select id="motivo" name="motivo">
+                  <option>Consulta general</option>
+                  <option>Reserva de mesa</option>
+                  <option>Presupuesto para evento</option>
+                  <option>Compra de café en grano</option>
+                </select>
+              </div>
+              <div>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu consulta acá" required></textarea>
+              </div>
+              <button type="submit">Enviar mensaje</button>
+              <p>Este formulario es de prueba, todavía no envía mensajes.</p>
+            </form>
+          </div>
+
+          <!-- dirección, horarios, etc -->
+          <aside>
+            <div>
+              <h3>Dónde estamos</h3>
+              <p>Av. de los Algarrobos 1234</p>
+              <p>Teléfono: (0000) 15-123456</p>
+              <p>Correo: hola@cafealgarrobo.com</p>
+            </div>
+
+            <div>
+              <h3>Horarios</h3>
+              <ul>
+                <li><span>Lunes a viernes</span> <span>8 a 20 h</span></li>
+                <li><span>Sábados</span> <span>9 a 20 h</span></li>
+                <li><span>Domingos</span> <span>Cerrado</span></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>¿Querés aprender a preparar café?</h3>
+              <p>Una vez por mes damos un taller abierto de métodos de filtrado. Consultá la próxima fecha en el formulario.</p>
+              <a href="https://sca.coffee" target="_blank" rel="noopener">Conocé la Specialty Coffee Association →</a>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- pie -->
+  <footer>
+    <div>
+      <div>
+        <div>
+          <h2>Café Algarrobo</h2>
+          <p>Av. de los Algarrobos 1234<br>Lunes a sábados de 8 a 20 h</p>
+        </div>
+        <div>
+          <h2>Navegación</h2>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nuestro-cafe.html">Nuestro café</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Para saber más</h2>
+          <ul>
+            <li><a href="https://es.wikipedia.org/wiki/Caf%C3%A9" target="_blank" rel="noopener">El café en Wikipedia</a></li>
+            <li><a href="https://sca.coffee" target="_blank" rel="noopener">Specialty Coffee Association</a></li>
+          </ul>
+        </div>
+      </div>
+      <p>
+        © 2026 Café Algarrobo (empresa ficticia) · Hecho por Tobías Uriel Barmaimon para el TP final del Módulo 1
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 420" width="480" height="420" role="img" aria-label="Ilustración de una taza de café humeante">
+  <!-- fondo circular -->
+  <circle cx="240" cy="210" r="190" fill="#ead9c6"/>
+  <circle cx="240" cy="210" r="150" fill="#f6efe6"/>
+  <!-- vapor -->
+  <g fill="none" stroke="#c0643a" stroke-width="7" stroke-linecap="round" opacity="0.85">
+    <path d="M200 70 q-18 22 0 42 q18 20 0 42"/>
+    <path d="M240 56 q-18 22 0 42 q18 20 0 42"/>
+    <path d="M280 70 q-18 22 0 42 q18 20 0 42"/>
+  </g>
+  <!-- plato -->
+  <ellipse cx="235" cy="330" rx="150" ry="26" fill="#2b1d16"/>
+  <ellipse cx="235" cy="324" rx="150" ry="24" fill="#5a3d2e"/>
+  <!-- asa -->
+  <path d="M320 205 h22 a38 38 0 0 1 0 76 h-30" fill="none" stroke="#2b1d16" stroke-width="16"/>
+  <!-- cuerpo de la taza -->
+  <path d="M130 190 h210 v40 a105 95 0 0 1 -210 0 z" fill="#2b1d16"/>
+  <ellipse cx="235" cy="190" rx="105" ry="18" fill="#3d2a20"/>
+  <ellipse cx="235" cy="192" rx="92" ry="13" fill="#7a4a2e"/>
+  <!-- latte art (hoja) -->
+  <path d="M200 192 q35 -14 70 0 q-35 14 -70 0 z" fill="#f1dcc2"/>
+  <path d="M206 192 h58" stroke="#7a4a2e" stroke-width="2"/>
+  <!-- franja decorativa -->
+  <path d="M138 240 q97 30 194 0" fill="none" stroke="#c0643a" stroke-width="6"/>
+  <!-- granos sueltos -->
+  <g fill="#5a3d2e">
+    <ellipse cx="90" cy="360" rx="14" ry="10" transform="rotate(-25 90 360)"/>
+    <ellipse cx="390" cy="362" rx="14" ry="10" transform="rotate(30 390 362)"/>
+    <ellipse cx="410" cy="330" rx="12" ry="9" transform="rotate(-10 410 330)"/>
+  </g>
+  <g stroke="#2b1d16" stroke-width="2" fill="none">
+    <path d="M82 366 q8 -6 16 -12"/>
+    <path d="M383 356 q8 6 14 12"/>
+    <path d="M403 330 h14"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 400" width="320" height="400" role="img" aria-label="Ilustración de una cafetera de filtro tipo Chemex">
+  <rect width="320" height="400" rx="24" fill="#2b1d16"/>
+  <!-- pava -->
+  <path d="M60 70 h70 v50 a10 10 0 0 1 -10 10 h-50 a10 10 0 0 1 -10 -10 z" fill="#c0643a"/>
+  <path d="M130 84 q40 0 64 40" fill="none" stroke="#c0643a" stroke-width="7" stroke-linecap="round"/>
+  <rect x="80" y="58" width="30" height="12" rx="4" fill="#c0643a"/>
+  <!-- chorro de agua -->
+  <path d="M196 126 q4 30 -8 58" fill="none" stroke="#9fc3d6" stroke-width="4" stroke-linecap="round"/>
+  <!-- filtro y cuerpo -->
+  <path d="M110 170 h150 l-60 90 h-30 z" fill="#f6efe6"/>
+  <path d="M120 176 h130" stroke="#ead9c6" stroke-width="4"/>
+  <path d="M170 260 h30 l64 100 h-158 z" fill="#f6efe6" opacity="0.92"/>
+  <!-- café en la base -->
+  <path d="M146 312 h78 l30 48 h-138 z" fill="#7a4a2e"/>
+  <!-- cuello de madera -->
+  <path d="M164 236 h42 l-8 34 h-26 z" fill="#a8744f"/>
+  <path d="M168 252 h34" stroke="#2b1d16" stroke-width="3"/>
+  <ellipse cx="185" cy="364" rx="92" ry="8" fill="#5a3d2e"/>
+</svg>

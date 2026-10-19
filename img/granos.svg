@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" width="480" height="320" role="img" aria-label="Ilustración de una rama de cafeto con frutos y granos de café">
+  <rect width="480" height="320" rx="24" fill="#ead9c6"/>
+  <!-- rama -->
+  <path d="M30 250 C140 210 240 150 450 70" fill="none" stroke="#5a3d2e" stroke-width="8" stroke-linecap="round"/>
+  <!-- hojas -->
+  <g fill="#6b7f5a">
+    <path d="M120 222 q-10 -60 40 -80 q10 50 -40 80 z"/>
+    <path d="M150 214 q40 40 90 20 q-40 -40 -90 -20 z"/>
+    <path d="M260 160 q-6 -60 46 -76 q6 52 -46 76 z"/>
+    <path d="M290 150 q44 36 92 12 q-44 -36 -92 -12 z"/>
+    <path d="M380 108 q0 -50 40 -64 q4 44 -40 64 z"/>
+  </g>
+  <!-- cerezas de café -->
+  <g fill="#b23b2a">
+    <circle cx="200" cy="200" r="13"/><circle cx="222" cy="206" r="12"/><circle cx="210" cy="222" r="11"/>
+    <circle cx="336" cy="140" r="12"/><circle cx="356" cy="146" r="11"/>
+  </g>
+  <g fill="#e07a5a"><circle cx="196" cy="196" r="4"/><circle cx="332" cy="136" r="4"/></g>
+  <!-- granos tostados -->
+  <g fill="#3d2a20">
+    <ellipse cx="80" cy="290" rx="22" ry="15" transform="rotate(-20 80 290)"/>
+    <ellipse cx="130" cy="296" rx="22" ry="15" transform="rotate(15 130 296)"/>
+    <ellipse cx="380" cy="270" rx="22" ry="15" transform="rotate(-35 380 270)"/>
+    <ellipse cx="426" cy="282" rx="22" ry="15" transform="rotate(10 426 282)"/>
+  </g>
+  <g fill="none" stroke="#ead9c6" stroke-width="3" stroke-linecap="round">
+    <path d="M64 296 q16 -4 32 -12"/><path d="M114 290 q16 6 32 12"/>
+    <path d="M364 280 q14 -10 32 -20"/><path d="M410 278 q16 2 32 8"/>
+  </g>
+</svg>
