@@ -6,20 +6,28 @@
   <meta name="description" content="Del grano a la taza: cómo seleccionamos, tostamos y preparamos el café en Café Algarrobo.">
   <title>Café Algarrobo | Nuestro café</title>
   <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+
+  <!-- fuentes de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Work+Sans:wght@400;600&display=swap">
+
+  <!-- mis estilos -->
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
   <!-- menú (es el mismo en las 3 páginas) -->
-  <header>
-    <nav aria-label="Navegación principal">
-      <a href="index.html">
+  <header class="barra-navegacion">
+    <nav class="container d-flex flex-wrap justify-content-between align-items-center contenedor-nav" aria-label="Navegación principal">
+      <a class="marca" href="index.html">
         <img src="img/logo.svg" alt="Logo de Café Algarrobo" width="46" height="46">
         Café Algarrobo
       </a>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="nuestro-cafe.html" aria-current="page">Nuestro café</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+      <ul class="list-unstyled d-flex flex-wrap justify-content-center m-0">
+        <li><a class="enlace-menu" href="index.html">Inicio</a></li>
+        <li><a class="enlace-menu activo" href="nuestro-cafe.html" aria-current="page">Nuestro café</a></li>
+        <li><a class="enlace-menu" href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -27,11 +35,11 @@
   <main>
 
     <!-- título de la página -->
-    <section>
-      <div>
-        <span>Nuestro café</span>
+    <section class="hero-cafe">
+      <div class="container">
+        <span class="etiqueta">Nuestro café</span>
         <h1>Del grano a la taza</h1>
-        <p>
+        <p class="lead mb-0">
           Detrás de cada café hay un recorrido largo: una planta que tarda años en dar frutos,
           manos que cosechan, un tostado cuidadoso y una preparación precisa. Te contamos cómo lo hacemos.
         </p>
@@ -39,12 +47,12 @@
     </section>
 
     <!-- artículo -->
-    <section>
-      <div>
-        <div>
+    <section class="seccion">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
 
-          <article>
-            <h2>¿Qué es el café de especialidad?</h2>
+          <article class="col-lg-8">
+            <h2 class="titulo-seccion">¿Qué es el café de especialidad?</h2>
             <p>
               El café es la semilla de la fruta del cafeto, un arbusto que crece en zonas tropicales
               de altura. Cuando hablamos de <strong>café de especialidad</strong> nos referimos a granos
@@ -57,11 +65,11 @@
               los probamos antes de elegirlos y los tostamos en el local para ofrecerlos siempre frescos.
             </p>
 
-            <img src="img/granos.svg" alt="Rama de cafeto con frutos rojos y granos de café tostados" width="480" height="320">
+            <img class="rounded-4 my-4" src="img/granos.svg" alt="Rama de cafeto con frutos rojos y granos de café tostados" width="480" height="320">
 
             <h3>El recorrido, paso a paso</h3>
             <!-- uso ol porque acá el orden de los pasos importa -->
-            <ol>
+            <ol class="lista-pasos mt-4">
               <li><strong>Cosecha.</strong> Los frutos maduros, de color rojo intenso, se recolectan a mano uno por uno.</li>
               <li><strong>Procesado.</strong> Se separa la semilla de la pulpa, ya sea por lavado o dejando secar el fruto entero al sol.</li>
               <li><strong>Secado y reposo.</strong> El grano verde descansa hasta alcanzar la humedad justa para viajar.</li>
@@ -70,12 +78,12 @@
               <li><strong>Extracción.</strong> El agua caliente disuelve los sabores del café y llega la taza a tu mesa.</li>
             </ol>
 
-            <h3>Métodos que vas a encontrar en la barra</h3>
-            <div>
-              <div>
-                <img src="img/chemex.svg" alt="Cafetera de filtro tipo Chemex con una pava sirviendo agua" width="320" height="400">
+            <h3 class="mt-4">Métodos que vas a encontrar en la barra</h3>
+            <div class="row g-4 align-items-center mt-1">
+              <div class="col-sm-5 text-center">
+                <img class="rounded-4" src="img/chemex.svg" alt="Cafetera de filtro tipo Chemex con una pava sirviendo agua" width="320" height="400">
               </div>
-              <div>
+              <div class="col-sm-7">
                 <ul>
                   <li><strong>Espresso:</strong> intenso y con cuerpo, base de cortados, flat white y capuchinos.</li>
                   <li><strong>Filtrado (V60 o Chemex):</strong> más liviano y limpio, ideal para descubrir las notas de cada origen.</li>
@@ -87,8 +95,8 @@
           </article>
 
           <!-- columna del costado -->
-          <aside>
-            <div>
+          <aside class="col-lg-4">
+            <div class="dato-curioso mb-4">
               <h3>Dato curioso</h3>
               <p>
                 Según una leyenda muy difundida, el café fue descubierto en Etiopía por un pastor
@@ -97,17 +105,17 @@
               <a href="https://es.wikipedia.org/wiki/Caf%C3%A9" target="_blank" rel="noopener">Leer más sobre la historia del café →</a>
             </div>
 
-            <div>
+            <div class="tarjeta-cafe">
               <h3>Nuestra carta</h3>
-              <ul>
-                <li><span>Espresso</span> <span>$ 2.800</span></li>
-                <li><span>Cortado</span> <span>$ 3.100</span></li>
-                <li><span>Flat white</span> <span>$ 3.900</span></li>
-                <li><span>Capuchino</span> <span>$ 4.000</span></li>
-                <li><span>Filtrado del día</span> <span>$ 3.600</span></li>
-                <li><span>Cold brew</span> <span>$ 4.200</span></li>
-                <li><span>Medialuna</span> <span>$ 1.300</span></li>
-                <li><span>Budín del día</span> <span>$ 2.500</span></li>
+              <ul class="lista-carta">
+                <li><span>Espresso</span> <span class="precio">$ 2.800</span></li>
+                <li><span>Cortado</span> <span class="precio">$ 3.100</span></li>
+                <li><span>Flat white</span> <span class="precio">$ 3.900</span></li>
+                <li><span>Capuchino</span> <span class="precio">$ 4.000</span></li>
+                <li><span>Filtrado del día</span> <span class="precio">$ 3.600</span></li>
+                <li><span>Cold brew</span> <span class="precio">$ 4.200</span></li>
+                <li><span>Medialuna</span> <span class="precio">$ 1.300</span></li>
+                <li><span>Budín del día</span> <span class="precio">$ 2.500</span></li>
               </ul>
             </div>
           </aside>
@@ -119,14 +127,14 @@
   </main>
 
   <!-- pie -->
-  <footer>
-    <div>
-      <div>
-        <div>
+  <footer class="pie-pagina">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
           <h2>Café Algarrobo</h2>
           <p>Av. de los Algarrobos 1234<br>Lunes a sábados de 8 a 20 h</p>
         </div>
-        <div>
+        <div class="col-6 col-md-3">
           <h2>Navegación</h2>
           <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -134,7 +142,7 @@
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </div>
-        <div>
+        <div class="col-6 col-md-4">
           <h2>Para saber más</h2>
           <ul>
             <li><a href="https://es.wikipedia.org/wiki/Caf%C3%A9" target="_blank" rel="noopener">El café en Wikipedia</a></li>
@@ -142,7 +150,7 @@
           </ul>
         </div>
       </div>
-      <p>
+      <p class="creditos">
         © 2026 Café Algarrobo (empresa ficticia) · Hecho por Tobías Uriel Barmaimon para el TP final del Módulo 1
       </p>
     </div>

@@ -1,0 +1,391 @@
+/* Estilos de Café Algarrobo - TP final módulo 1 */
+
+/* colores y fuentes que uso en todo el sitio, así si quiero cambiar uno lo cambio acá y listo */
+:root {
+  --cafe-oscuro: #2b1d16;
+  --cafe-medio: #5a3d2e;
+  --crema: #f6efe6;
+  --arena: #ead9c6;
+  --terracota: #c0643a;
+  --terracota-oscuro: #9e4d2a;
+  --salvia: #6b7f5a;
+  --fuente-titulos: "Fraunces", Georgia, serif;
+  --fuente-texto: "Work Sans", Arial, sans-serif;
+}
+
+/* general */
+body {
+  font-family: var(--fuente-texto);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--cafe-oscuro);
+  background-color: var(--crema);
+}
+
+h1, h2, h3 {
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  color: var(--cafe-oscuro);
+}
+
+a {
+  color: var(--terracota-oscuro);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* menú */
+.barra-navegacion {
+  background-color: var(--cafe-oscuro);
+  padding: 12px 0;
+}
+
+.barra-navegacion .marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--fuente-titulos);
+  font-size: 1.4rem;
+  color: var(--crema);
+  text-decoration: none;
+}
+
+.barra-navegacion .marca img {
+  width: 46px;
+  height: 46px;
+}
+
+.enlace-menu {
+  position: relative;
+  color: var(--arena);
+  text-decoration: none;
+  padding: 6px 4px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+/* rayita naranja que aparece abajo del link cuando pasás el mouse */
+.enlace-menu::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--terracota);
+  transition: width 0.3s ease;
+}
+
+.enlace-menu:hover,
+.enlace-menu.activo {
+  color: #ffffff;
+}
+
+.enlace-menu:hover::after,
+.enlace-menu.activo::after {
+  width: 100%;
+}
+
+/* portada */
+.hero-cafe {
+  background-color: var(--arena);
+  padding: 70px 0;
+}
+
+.hero-cafe h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-cafe .etiqueta {
+  display: inline-block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--terracota-oscuro);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* animación para que la taza suba y baje despacito */
+.imagen-flotante {
+  animation: flotar 4s ease-in-out infinite;
+}
+
+@keyframes flotar {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
+}
+
+/* botones */
+.boton-cafe {
+  display: inline-block;
+  background-color: var(--terracota);
+  color: #ffffff;
+  border: 2px solid var(--terracota);
+  border-radius: 40px;
+  padding: 10px 26px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-cafe:hover {
+  background-color: var(--terracota-oscuro);
+  border-color: var(--terracota-oscuro);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.boton-cafe.contorno {
+  background-color: transparent;
+  color: var(--cafe-oscuro);
+  border-color: var(--cafe-oscuro);
+}
+
+.boton-cafe.contorno:hover {
+  background-color: var(--cafe-oscuro);
+  color: var(--crema);
+}
+
+/* secciones y títulos con la rayita abajo */
+.seccion {
+  padding: 60px 0;
+}
+
+.titulo-seccion {
+  font-size: 2.1rem;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.titulo-seccion::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--terracota);
+}
+
+/* tarjetas: se levantan un poco al pasar el mouse */
+.tarjeta-cafe {
+  background-color: #ffffff;
+  border: 1px solid var(--arena);
+  border-radius: 18px;
+  padding: 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-cafe:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(43, 29, 22, 0.15);
+}
+
+.tarjeta-cafe .icono {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.tarjeta-cafe h3 {
+  font-size: 1.3rem;
+}
+
+/* lista de productos con precio a la derecha */
+.lista-carta {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-carta li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px dashed var(--arena);
+}
+
+.lista-carta .precio {
+  font-weight: 600;
+  color: var(--terracota-oscuro);
+  white-space: nowrap;
+}
+
+/* lista de pasos: cambio los números por circulitos */
+.lista-pasos {
+  counter-reset: paso;
+  list-style: none;
+  padding: 0;
+}
+
+.lista-pasos li {
+  counter-increment: paso;
+  position: relative;
+  padding: 0 0 22px 62px;
+}
+
+.lista-pasos li::before {
+  content: counter(paso);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--cafe-oscuro);
+  color: var(--crema);
+  font-family: var(--fuente-titulos);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* recuadro oscuro (dato curioso) */
+.dato-curioso {
+  background-color: var(--cafe-oscuro);
+  color: var(--crema);
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.dato-curioso h3 {
+  color: var(--arena);
+}
+
+.dato-curioso a {
+  color: #f0b48f;
+}
+
+/* formulario */
+.formulario-cafe {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 32px;
+  border: 1px solid var(--arena);
+}
+
+.formulario-cafe label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.formulario-cafe input,
+.formulario-cafe textarea,
+.formulario-cafe select {
+  border: 1px solid #d3c1ad;
+  border-radius: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formulario-cafe input:focus,
+.formulario-cafe textarea:focus,
+.formulario-cafe select:focus {
+  border-color: var(--terracota);
+  box-shadow: 0 0 0 3px rgba(192, 100, 58, 0.2);
+  outline: none;
+}
+
+.nota-formulario {
+  font-size: 0.9rem;
+  color: var(--cafe-medio);
+}
+
+/* recuadro verde de eventos */
+.banda-invitacion {
+  background-color: var(--salvia);
+  color: #ffffff;
+  border-radius: 24px;
+  padding: 44px;
+}
+
+.banda-invitacion h2 {
+  color: #ffffff;
+}
+
+/* pie de página */
+.pie-pagina {
+  background-color: var(--cafe-oscuro);
+  color: var(--arena);
+  padding: 44px 0 24px;
+  font-size: 0.95rem;
+}
+
+.pie-pagina h2 {
+  color: var(--crema);
+  font-size: 1.15rem;
+}
+
+.pie-pagina a {
+  color: var(--arena);
+  transition: color 0.3s ease;
+}
+
+.pie-pagina a:hover {
+  color: var(--terracota);
+}
+
+.pie-pagina ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pie-pagina .creditos {
+  border-top: 1px solid var(--cafe-medio);
+  margin-top: 24px;
+  padding-top: 18px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* RESPONSIVE */
+/* tablet y celular */
+@media (max-width: 768px) {
+  .hero-cafe {
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .hero-cafe h1 {
+    font-size: 2.2rem;
+  }
+
+  .titulo-seccion {
+    font-size: 1.7rem;
+  }
+
+  .seccion {
+    padding: 40px 0;
+  }
+
+  .banda-invitacion {
+    padding: 28px;
+    text-align: center;
+  }
+}
+
+/* celulares chicos: el logo arriba y el menú abajo */
+@media (max-width: 576px) {
+  .barra-navegacion .contenedor-nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .enlace-menu {
+    margin: 0 6px;
+    font-size: 0.95rem;
+  }
+
+  .formulario-cafe {
+    padding: 22px;
+  }
+}

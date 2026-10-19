@@ -6,20 +6,28 @@
   <meta name="description" content="Escribile a Café Algarrobo: consultas, eventos y presupuestos.">
   <title>Café Algarrobo | Contacto</title>
   <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+
+  <!-- fuentes de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Work+Sans:wght@400;600&display=swap">
+
+  <!-- mis estilos -->
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
   <!-- menú (es el mismo en las 3 páginas) -->
-  <header>
-    <nav aria-label="Navegación principal">
-      <a href="index.html">
+  <header class="barra-navegacion">
+    <nav class="container d-flex flex-wrap justify-content-between align-items-center contenedor-nav" aria-label="Navegación principal">
+      <a class="marca" href="index.html">
         <img src="img/logo.svg" alt="Logo de Café Algarrobo" width="46" height="46">
         Café Algarrobo
       </a>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="nuestro-cafe.html">Nuestro café</a></li>
-        <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+      <ul class="list-unstyled d-flex flex-wrap justify-content-center m-0">
+        <li><a class="enlace-menu" href="index.html">Inicio</a></li>
+        <li><a class="enlace-menu" href="nuestro-cafe.html">Nuestro café</a></li>
+        <li><a class="enlace-menu activo" href="contacto.html" aria-current="page">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -27,71 +35,71 @@
   <main>
 
     <!-- título de la página -->
-    <section>
-      <div>
-        <span>Contacto</span>
+    <section class="hero-cafe">
+      <div class="container">
+        <span class="etiqueta">Contacto</span>
         <h1>Hablemos de café</h1>
-        <p>
+        <p class="lead mb-0">
           ¿Tenés una consulta, querés reservar una mesa o pedir un presupuesto para un evento?
           Completá el formulario y te respondemos a la brevedad.
         </p>
       </div>
     </section>
 
-    <section>
-      <div>
-        <div>
+    <section class="seccion">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
 
           <!-- formulario -->
-          <div>
-            <h2>Envianos un mensaje</h2>
+          <div class="col-lg-7">
+            <h2 class="titulo-seccion">Envianos un mensaje</h2>
             <!-- por ahora no envía nada, es solo el diseño (lo pide así la consigna) -->
-            <form action="#" method="post">
-              <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido" required>
+            <form class="formulario-cafe" action="#" method="post">
+              <div class="mb-3">
+                <label class="form-label" for="nombre">Nombre</label>
+                <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido" required>
               </div>
-              <div>
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+              <div class="mb-3">
+                <label class="form-label" for="email">Correo electrónico</label>
+                <input class="form-control" type="email" id="email" name="email" placeholder="nombre@ejemplo.com" required>
               </div>
-              <div>
-                <label for="motivo">Motivo de la consulta</label>
-                <select id="motivo" name="motivo">
+              <div class="mb-3">
+                <label class="form-label" for="motivo">Motivo de la consulta</label>
+                <select class="form-select" id="motivo" name="motivo">
                   <option>Consulta general</option>
                   <option>Reserva de mesa</option>
                   <option>Presupuesto para evento</option>
                   <option>Compra de café en grano</option>
                 </select>
               </div>
-              <div>
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu consulta acá" required></textarea>
+              <div class="mb-3">
+                <label class="form-label" for="mensaje">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu consulta acá" required></textarea>
               </div>
-              <button type="submit">Enviar mensaje</button>
-              <p>Este formulario es de prueba, todavía no envía mensajes.</p>
+              <button class="boton-cafe" type="submit">Enviar mensaje</button>
+              <p class="nota-formulario mt-3 mb-0">Este formulario es de prueba, todavía no envía mensajes.</p>
             </form>
           </div>
 
           <!-- dirección, horarios, etc -->
-          <aside>
-            <div>
+          <aside class="col-lg-5">
+            <div class="tarjeta-cafe mb-4">
               <h3>Dónde estamos</h3>
-              <p>Av. de los Algarrobos 1234</p>
-              <p>Teléfono: (0000) 15-123456</p>
-              <p>Correo: hola@cafealgarrobo.com</p>
+              <p class="mb-2">Av. de los Algarrobos 1234</p>
+              <p class="mb-2">Teléfono: (0000) 15-123456</p>
+              <p class="mb-0">Correo: hola@cafealgarrobo.com</p>
             </div>
 
-            <div>
+            <div class="tarjeta-cafe mb-4">
               <h3>Horarios</h3>
-              <ul>
-                <li><span>Lunes a viernes</span> <span>8 a 20 h</span></li>
-                <li><span>Sábados</span> <span>9 a 20 h</span></li>
-                <li><span>Domingos</span> <span>Cerrado</span></li>
+              <ul class="lista-carta">
+                <li><span>Lunes a viernes</span> <span class="precio">8 a 20 h</span></li>
+                <li><span>Sábados</span> <span class="precio">9 a 20 h</span></li>
+                <li><span>Domingos</span> <span class="precio">Cerrado</span></li>
               </ul>
             </div>
 
-            <div>
+            <div class="dato-curioso">
               <h3>¿Querés aprender a preparar café?</h3>
               <p>Una vez por mes damos un taller abierto de métodos de filtrado. Consultá la próxima fecha en el formulario.</p>
               <a href="https://sca.coffee" target="_blank" rel="noopener">Conocé la Specialty Coffee Association →</a>
@@ -105,14 +113,14 @@
   </main>
 
   <!-- pie -->
-  <footer>
-    <div>
-      <div>
-        <div>
+  <footer class="pie-pagina">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
           <h2>Café Algarrobo</h2>
           <p>Av. de los Algarrobos 1234<br>Lunes a sábados de 8 a 20 h</p>
         </div>
-        <div>
+        <div class="col-6 col-md-3">
           <h2>Navegación</h2>
           <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -120,7 +128,7 @@
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </div>
-        <div>
+        <div class="col-6 col-md-4">
           <h2>Para saber más</h2>
           <ul>
             <li><a href="https://es.wikipedia.org/wiki/Caf%C3%A9" target="_blank" rel="noopener">El café en Wikipedia</a></li>
@@ -128,7 +136,7 @@
           </ul>
         </div>
       </div>
-      <p>
+      <p class="creditos">
         © 2026 Café Algarrobo (empresa ficticia) · Hecho por Tobías Uriel Barmaimon para el TP final del Módulo 1
       </p>
     </div>
